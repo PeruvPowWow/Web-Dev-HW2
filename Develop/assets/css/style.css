@@ -135,16 +135,19 @@ main {
   justify-content: space-between;
 }
 
-.page-section > h2 {
+.page-section h2 {
   flex: 0 0 20%;
   text-align: right;
   padding-right: 15px;
   border-right: 4px solid var(--primary);
   font-size: 4vw;
   line-height: 1.1;
+  margin-bottom: 20px;
+  position: relative;
 }
 
-.page-section > div {
+.page-section h2 span {
+  display: block;
   flex: 0 0 77%;
 }
 
