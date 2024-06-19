@@ -55,7 +55,8 @@ header h1 {
 
 nav {
   display: flex;
- margin-left: auto;
+  margin-left: auto;
+  gap: 20px
 }
 
 nav a {
@@ -144,15 +145,12 @@ main {
   line-height: 1.1;
   margin-bottom: 20px;
   position: relative;
+  
 }
 
 .page-section h2 span {
   display: block;
   flex: 0 0 77%;
-}
-
-.page-section p {
-  margin-bottom: 20px;
 }
 
 .flex-container {
@@ -161,26 +159,34 @@ main {
   justify-content: center;
 }
 
-.flex-item {
-  border: 5px solid var(--secondary);
-  background-color: var(--primary);
-  color: var(--tertiary);
-  min-height: 150px;
-  max-height: 150px;
-  flex-basis: calc(50% - 1em);
+.portfolio {
   display: flex;
-  align-items: flex-end;
-  padding: 0 0 20px 0;
-  margin: 0.5em;
-  text-decoration: none;
-  background-blend-mode: soft-light;
-  background-size: 150%;
-  transition: all 0.5s;
-  font-size: 0.9rem;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.portfolio-item {
+ flex: 1 1 calc(33.333% - 20px);
+ background-size: cover;
+ background-position: center;
+ min-height: 200px;
+ display: flex;
+ align-items: flex-end;
+ color: var(--light);
+ text-decoration: none;
+ transition:transform 0.3s;
+
+}
+
+.portfolio-item div {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  text-align: center;
+  color: var(--secondary);
 }
 
 /* feature first portfolio item */
-.flex-item:first-child {
+.portfolio-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
 }
@@ -194,12 +200,10 @@ main {
   padding: 8px 10px;
 }
 
-.flex-item h3 {
-  font-size: 1.6rem;
-}
-
 .contact address {
   display: flex;
+  flex-direction:row;
+  gap: 250px;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -224,6 +228,16 @@ main {
 .contact address a:hover {
   background-size: 100% 88%;
   color: var(--secondary);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--dark);
+  color: var(--light);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 /* portfolio project images */
