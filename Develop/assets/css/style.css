@@ -272,15 +272,45 @@ footer {
 }
 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
+  .hero-banner {
+    min-height: 20vh;
+  }
+  .page-section h2 {
+    font-size: 3vw;
+  }
+  .portfolio-item {
+    flex: 1 0 100%;
+  }
+  nav a {
+    font-size: 1.2rem;
+  }
   body {
-    background-color: var(--primary);
+    background-color: var(--light);
+  }
+  .contact address a {
+    font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+  .hero-banner {
+    min-height: 15vh;
+  }
+  header h1 {
+    font-size: 6vw;
+  }
+  .page-section h2 {
+    font-size: 5vw;
+  }
+  nav a {
+    font-size: 1rem;
+  }
   body {
-    background-color: var(--secondary);
+    background-color: var(--light);
+  }
+  .contact address a {
+    font-size: rem;
   }
 }
 
